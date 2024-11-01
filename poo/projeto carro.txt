@@ -1,0 +1,27 @@
+Atividade sobre Herança e Polimorfismo
+Vence amanhã às 23:59
+Instruções
+Neste exercício, você deve criar um sistema que modele diferentes tipos de veículos usando os conceitos de herança e polimorfismo.
+
+Crie uma classe base chamada Veiculo, que possua os seguintes atributos:
+
+marca: A marca do veículo (string)
+modelo: O modelo do veículo (string)
+ano: O ano de fabricação do veículo (inteiro)
+Além disso, a classe Veiculo deve possuir os seguintes métodos:
+
+__init__: Para inicializar os atributos marca, modelo e ano.
+descricao: Retorna uma string no formato "Ano Marca Modelo".
+tipo_combustivel: Um método abstrato (que deve ser sobrescrito pelas subclasses), representando o tipo de combustível utilizado pelo veículo.
+Em seguida, crie as seguintes classes derivadas:
+
+Carro: Herda de Veiculo e possui o atributo adicional portas (inteiro, representando o número de portas). Deve sobrescrever o método tipo_combustivel para retornar "Gasolina".
+Moto: Herda de Veiculo e possui o atributo adicional cilindradas (inteiro, representando a capacidade do motor em cilindradas). Deve sobrescrever o método tipo_combustivel para retornar "Gasolina".
+Caminhao: Herda de Veiculo e possui o atributo adicional carga_maxima (inteiro, representando a capacidade máxima de carga em quilogramas). Deve sobrescrever o método tipo_combustivel para retornar "Diesel".
+Crie uma função polimórfica chamada mostrar_informacoes que receba um objeto do tipo Veiculo (ou qualquer uma de suas subclasses) e mostre as seguintes informações:
+
+A descrição do veículo (chamando o método descricao).
+O tipo de combustível utilizado (chamando o método tipo_combustivel).
+Instancie objetos das classes Carro, Moto e Caminhao, e utilize a função mostrar_informacoes para exibir as informações de cada veículo.
+
+Meu trabalho

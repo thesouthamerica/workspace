@@ -1,0 +1,15 @@
+lista = [10, 20, 30, 40, 50]
+
+#mostre o ultimo valor do array:
+print("ultimo valor da lista",lista[-1])
+lista.append(lista[-1]-60)
+print("minha lista com valor adcionado:", lista)
+print("ultimo valor da lista",lista[-1])
+
+#como mostrar se os numeros da lista sao positivos ou negativos:
+if lista[-1] > 0:
+    print(lista[-1],"é positivo")
+elif lista[-1] == 0:
+    print(lista[-1],"neutro")
+else:
+    print(lista[-1], "é negativo")
