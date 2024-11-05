@@ -1,3 +1,5 @@
+import time
+
 class Funcionarios:
     def __init__(self, nome, cargo, salario=0):
         self.nome = nome
@@ -27,6 +29,9 @@ class Gerente(Funcionarios):
     def ajustar_salario(self, novo_salario):
         self._salario = novo_salario
 
+# Marcando o tempo de início
+start_time = time.time()
+
 funcionario = Funcionarios("Maria do Bairro", "Vendedora", 2500)
 gerente = Gerente("Maria", "Gerente", 10000)
 print(f"O Salario do funcionário era: R${funcionario._salario:.2f}")
@@ -37,3 +42,10 @@ gerente.aumentar_salario(1000)
 
 print(f"O Salário atual do Funcionário passa a ser: R${funcionario.proventos():.2f}")
 print(f"O Salário atual do Gerente passa a ser: R${gerente.proventos():.2f}")
+
+# Marcando o tempo de fim
+end_time = time.time()
+
+# Calculando o tempo total de execução
+execution_time = end_time - start_time
+print(f"\nTempo de execução: {execution_time:.5f} segundos")
